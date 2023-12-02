@@ -23,7 +23,6 @@ func day1part1() {
 	total := 0
 	for scanner.Scan() {
 		text := scanner.Text()
-
 		num, _ := strconv.Atoi(fmt.Sprintf("%s%s", firstNumber(text), lastNumber(text)))
 		total += num
 	}
@@ -139,9 +138,7 @@ func day1part2() {
 	total := 0
 	for scanner.Scan() {
 		text := scanner.Text()
-
 		num, _ := strconv.Atoi(fmt.Sprintf("%s%s", firstNumberWords(text), lastNumberWords(text)))
-		fmt.Println("", num)
 		total += num
 	}
 	fmt.Println("Num:", total)
