@@ -200,7 +200,7 @@ func day7part1() {
 	for hand, ok := hands.Dequeue(); ok; hand, ok = hands.Dequeue() {
 		handStruct := hand.(Hand)
 		realRank := handCount - rank
-		fmt.Println("rank", realRank, "hand", string(handStruct.Cards), "bid", handStruct.Bid, "sort", handStruct.priority())
+		// fmt.Println("rank", realRank, "hand", string(handStruct.Cards), "bid", handStruct.Bid, "sort", handStruct.priority())
 		result += realRank * handStruct.Bid
 		rank++
 	}
@@ -233,7 +233,7 @@ func day7part2() {
 	for hand, ok := hands.Dequeue(); ok; hand, ok = hands.Dequeue() {
 		handStruct := hand.(Hand)
 		realRank := handCount - rank
-		fmt.Println("rank", realRank, "hand", string(handStruct.Cards), "bid", handStruct.Bid, "sort", handStruct.priority2())
+		// fmt.Println("rank", realRank, "hand", string(handStruct.Cards), "bid", handStruct.Bid, "sort", handStruct.priority2())
 		result += realRank * handStruct.Bid
 		rank++
 	}
